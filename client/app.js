@@ -22,8 +22,8 @@ function sendInformation(e){
 
   e.preventDefault()
   const data = new FormData(e.target);
-  data.append("address", "fernandoleonett@gmail.com");
-  data.append("owner", "Fernando J H Leonett");
+  data.append("address", "matiascabralmendez@gmail.com");
+  data.append("owner", "Matias Cabral");
   btnSubmit.reset()
 
   const values = Object.fromEntries(data);
