@@ -44,11 +44,6 @@ app.get("*", function (req, res) {
 app.post("/api/contact", async (req, res) => {
 const { email, name, subject, message, address, owner } = req.body;
 
-  
-
-
-
-
   const mailData = {
     from: {
       name: owner,

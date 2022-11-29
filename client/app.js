@@ -23,7 +23,7 @@ function sendInformation(e){
   e.preventDefault()
   const data = new FormData(e.target);
   data.append("address", "matiascabralmendez@gmail.com");
-  data.append("owner", "Matias Cabral");
+  // data.append("owner", "Matias Cabral");
   btnSubmit.reset()
 
   const values = Object.fromEntries(data);
