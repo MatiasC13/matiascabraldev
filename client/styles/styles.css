@@ -491,6 +491,10 @@ section {
   width: 90%;
 }
 
+.about-stats .progress-bars .progress-bar .progress-con .progress .canva {
+  width: 90%;
+}
+
 .stat-title {
   text-transform: uppercase;
   font-size: 1.4rem;
