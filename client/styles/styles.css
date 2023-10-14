@@ -276,7 +276,7 @@ section {
 }
 
 .header-content .right-header .name {
-  font-size: 3rem;
+  font-size: 2.5rem;
   margin-bottom: 2rem;
 }
 
@@ -433,6 +433,14 @@ section {
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
   width: 60%;
+}
+
+.about-stats .progress-bars .progress-bar .progress-con .progress .wordpress {
+  width: 100%;
+}
+
+.about-stats .progress-bars .progress-bar .progress-con .progress .webhosting {
+  width: 80%;
 }
 
 .about-stats .progress-bars .progress-bar .progress-con .progress .html {
