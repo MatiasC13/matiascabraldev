@@ -47,7 +47,7 @@ const { email, name, subject, message, address, owner } = req.body;
   const mailData = {
     from: {
       name: owner,
-      address: "matiascabralmendez@gmail.com",
+      address: "gregory.notificaciones@gmail.com",
     },
     replyTo: address,
     to: address,
