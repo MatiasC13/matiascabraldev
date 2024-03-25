@@ -503,6 +503,10 @@ section {
   width: 90%;
 }
 
+.about-stats .progress-bars .progress-bar .progress-con .progress .flutterflow {
+  width: 70%;
+}
+
 .stat-title {
   text-transform: uppercase;
   font-size: 1.4rem;
@@ -645,7 +649,7 @@ section {
 }
 
 .portfolios .portfolio-item .hover-items h3 {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: var(--color-white);
   margin-bottom: 1.5rem;
 }
@@ -832,6 +836,17 @@ section {
       -ms-flex-align: center;
           align-items: center;
   font-size: 1.3rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .contact-content-con .left-contact .contact-icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .contact-content-con .left-contact .contact-icon {
