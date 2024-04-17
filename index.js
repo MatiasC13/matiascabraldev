@@ -41,6 +41,7 @@ app.get("*", function (req, res) {
 
 
 app.post("/api/contact", async (req, res) => {
+  console.log("hola");
 const { email, name, subject, message, address, owner } = req.body;
 
   const mailData = {
@@ -56,13 +57,17 @@ const { email, name, subject, message, address, owner } = req.body;
     html: `<p>Hola ${name} te ha enviado un mensaje<p>${message}</p> <p>responder ${email}</p>`,
   };
   const transporter = nodemailer.createTransport({
-    service: "gmail",
-    port: 465, 
-    host: "smtp.gmail.com",
+    // service: "gmail",
+    port: 465,
+    // host: "smtp.gmail.com",
+    host: "smtp.titan.email",
     secure: true,
+    // amatiascabralmendez@gmail.com{
+    // user: process.env.EMAIL,
     auth: {
-      user: process.env.EMAIL,
-      pass: process.env.GMAIL_PASS,
+      user: "contacto@gregorywebapp.com",
+      // pass: process.env.GMAIL_PASS,
+      pass: process.env.PASS,
     },
   });
 
