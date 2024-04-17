@@ -57,17 +57,13 @@ const { email, name, subject, message, address, owner } = req.body;
     html: `<p>Hola ${name} te ha enviado un mensaje<p>${message}</p> <p>responder ${email}</p>`,
   };
   const transporter = nodemailer.createTransport({
-    // service: "gmail",
+    service: "gmail",
     port: 465,
-    // host: "smtp.gmail.com",
-    host: "smtp.titan.email",
+    host: "smtp.gmail.com",
     secure: true,
-    // amatiascabralmendez@gmail.com{
-    // user: process.env.EMAIL,
     auth: {
-      user: "contacto@gregorywebapp.com",
-      // pass: process.env.GMAIL_PASS,
-      pass: process.env.PASS,
+      user: process.env.EMAIL,
+      pass: process.env.GMAIL_PASS,
     },
   });
 
