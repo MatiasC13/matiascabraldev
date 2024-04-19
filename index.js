@@ -42,28 +42,34 @@ app.get("*", function (req, res) {
 
 app.post("/api/contact", async (req, res) => {
   console.log("hola");
-const { email, name, subject, message, address, owner } = req.body;
+const { email, name, subject, message} = req.body;
 
   const mailData = {
     from: {
-      name: owner,
-      address: "gregory.notificaciones@gmail.com",
+      name: "GREGORY Diseño Web-App 👾",
+      address: "contacto@gregorywebapp.com",
     },
-    replyTo: address,
-    to: address,
+    replyTo: "contacto@gregorywebapp.com",
+    to: email,
     // bcc: address,
     subject: `Contacto Portafolio ${subject}`,
 
     html: `<p>Hola ${name} te ha enviado un mensaje<p>${message}</p> <p>responder ${email}</p>`,
   };
+  console.log("esto es: el pass.env: ", process.env.PASS);
   const transporter = nodemailer.createTransport({
-    service: "gmail",
-    port: 465,
-    host: "smtp.gmail.com",
-    secure: true,
+    // service: "gmail",
+    // port: 465,
+    // host: "smtp.gmail.com",
+    // secure: true,
+    port: 587,
+    host: "smtp.titan.email",
+    secure: false,
     auth: {
-      user: process.env.EMAIL,
-      pass: process.env.GMAIL_PASS,
+      // user: process.env.EMAIL,
+      // pass: process.env.GMAIL_PASS,
+      user: "contacto@gregorywebapp.com",
+      pass: process.env.PASS,
     },
   });
 
