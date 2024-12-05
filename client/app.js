@@ -90,7 +90,6 @@ function DownloadFile(fileName) {
             req.onload = function () {
                 //Convert the Byte Data to BLOB object.
                 var blob = new Blob([req.response], { type: "application/octetstream" });
- 
                 //Check the Browser type and download the File.
                 var isIE = false || !!document.documentMode;
                 if (isIE) {
