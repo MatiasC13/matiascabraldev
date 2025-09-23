@@ -504,7 +504,7 @@ section {
 }
 
 .about-stats .progress-bars .progress-bar .progress-con .progress .flutterflow {
-  width: 70%;
+  width: 95%;
 }
 
 .stat-title {
@@ -649,7 +649,7 @@ section {
 }
 
 .portfolios .portfolio-item .hover-items h3 {
-  font-size: 1.3rem;
+  font-size: 1rem;
   color: var(--color-white);
   margin-bottom: 1.5rem;
 }
